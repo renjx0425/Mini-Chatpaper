@@ -1,0 +1,185 @@
+Existing Classes
+body {
+   height: 100dvh;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   margin-top: 0;
+}
+
+button {
+   background-color: rgb(59 130 246);
+   padding: 0.5rem;
+   border-radius: 0.75rem;
+   color: rgb(255 255 255);
+}
+
+button:hover {
+   background-color: rgb(96 165 250);
+}
+
+h1 {
+   color: rgb(255 255 255);
+   font-size: 2.25rem;
+   line-height: 2.5rem;  
+   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   width: 100%;
+   position: absolute;
+   top: 0px;
+   background: rgb(99,102,241);
+   background: linear-gradient(90deg, rgba(99,102,241,1) 0%, rgba(168,85,247,1) 50%, rgba(236,72,153,1) 100%);
+}
+
+h2 {
+   font-size: 2.25rem;
+   line-height: 2.5rem;
+}
+
+h3 {
+   font-size: 1.5rem;
+   line-height: 2rem;
+}
+
+hr {
+   opacity: 20%;
+}
+
+p {
+   font-size: 1rem;
+   line-height: 1.5rem;
+}
+
+/* Custom Classes  */
+
+.centered {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.chatbox-content {
+   padding-bottom: 8rem;
+   width: 33.333333%;
+   height: 80%;
+   position: fixed;
+   top: 7rem;
+   right: 0px;
+   border: 1px solid #ccc;
+   padding: 10px;
+   max-width: 600px;
+   margin: 0 auto;
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   overflow-y: auto; /* Enable vertical scrolling */
+   max-height: calc(100vh - 7rem - 8rem); /* Adjust height to fit within the viewport */
+}
+
+.content {
+   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+   padding-top: 8rem;
+   height: 100%;
+   position: relative;
+   width: 100%;
+}
+
+.message-input-section {
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   background-color: rgb(243 244 246);
+   border-width: 1px;
+   border-top-width: 2px;
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+}
+
+.paper-content {
+   padding-left: 4rem;
+   padding-bottom: 4rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   width: 60%;
+}
+
+/* Scroll Classes */
+.vertical-scroll {
+   overflow-y: scroll; /* Add the ability to scroll */
+   overflow-x: hidden
+}
+
+.hidden-scroll {
+   overflow-y: scroll; /* Add the ability to scroll */
+}
+ 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hidden-scroll::-webkit-scrollbar {
+   display: none;
+}
+ 
+/* Hide scrollbar for IE, Edge and Firefox */
+.hidden-scroll {
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+}
+
+/* Chatbox styles */
+.chatbox-content input[type="text"] {
+   width: calc(100% - 60px);
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.chatbox-content button {
+   padding: 10px 20px;
+   margin: 10px 0;
+   border: none;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.chatbox-content button:hover {
+   background-color: #0056b3;
+}
+
+/* Chat bubbles */
+#chat-bubbles {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   max-height: calc(100vh - 200px); /* Adjust this value based on your layout */
+   overflow-y: auto; /* Enable vertical scrolling */
+   overflow-x: hidden; /* Prevent horizontal overflow */
+   padding: 10px; /* Add padding to the container */
+   box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.chat-bubble {
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 10px;
+   max-width: 100%; /* Ensure bubbles don't exceed the container's width */
+   word-wrap: break-word;
+   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+   overflow-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.user-message {
+   background-color: #d1e7dd;
+   align-self: flex-end;
+   text-align: right;
+}
+
+.ai-response {
+   background-color: #f8d7da;
+   align-self: flex-start;
+   text-align: left;
+}
